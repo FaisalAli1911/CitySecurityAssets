@@ -59,7 +59,7 @@ public class EnemyAttack : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (timer >= timeBetweenAttacks && playerInRange && enemyHealth.Health > 0 && playerHealth.currentHealth > 0)
+        if (timer >= timeBetweenAttacks && playerInRange && enemyHealth.Health > 0)
         {
             Attack();
         }
@@ -81,7 +81,7 @@ public class EnemyAttack : MonoBehaviour
         if (playerHealth.currentHealth > 0)
         {
             playerHealth.TakeDamage(attackDamage);
-            anim.SetTrigger("playerINrangetrg");
+          //  anim.SetTrigger("playerINrangetrg");
           
 
         }
